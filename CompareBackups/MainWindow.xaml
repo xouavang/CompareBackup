@@ -1,0 +1,46 @@
+﻿<Window x:Class="CompareBackups.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CompareBackups"
+        mc:Ignorable="d"
+        Title="Backup File Comparer" Height="200" Width="800">
+    <StackPanel>
+        <TextBlock>Old Backup File:</TextBlock>
+        <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="2" Margin="0,2">
+            <StackPanel Orientation="Horizontal" Margin="4">
+                <Button Content="Choose File" Click="ChooseFile_Button_Click" Tag="{Binding OldBackupFile}"/>
+                <TextBlock x:Name="uxFile1" Text="{Binding OldBackupFile.Name, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Margin="5,0"/>
+            </StackPanel>
+        </Border>
+        <TextBlock Margin="0,10,0,0">New Backup File:</TextBlock>
+        <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="2" Margin="0,2">
+            <StackPanel Orientation="Horizontal" Margin="4">
+                <Button Content="Choose File" Click="ChooseFile_Button_Click" Tag="{Binding NewBackupFile}"/>
+                <TextBlock x:Name="uxFile2" Text="{Binding NewBackupFile.Name, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Margin="5,0"/>
+            </StackPanel>
+        </Border>
+        <Button Content="Compare" HorizontalAlignment="Center" Width="200" Margin="0,10" Click="Compare_Button_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="IsEnabled" Value="True"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=uxFile1}" Value="{x:Null}">
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Text, ElementName=uxFile1}" Value="">
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Text, ElementName=uxFile2}" Value="{x:Null}">
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Text, ElementName=uxFile2}" Value="">
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+    </StackPanel>
+</Window>

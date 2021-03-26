@@ -1,0 +1,15 @@
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\bin\Debug\CompareBackups.exe.config
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\bin\Debug\CompareBackups.exe
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\bin\Debug\CompareBackups.pdb
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\obj\Debug\CompareBackups.csprojAssemblyReference.cache
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\obj\Debug\MainWindow.g.cs
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\obj\Debug\App.g.cs
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\obj\Debug\CompareBackups_MarkupCompile.cache
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\obj\Debug\CompareBackups_MarkupCompile.lref
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\obj\Debug\MainWindow.baml
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\obj\Debug\CompareBackups.g.resources
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\obj\Debug\CompareBackups.Properties.Resources.resources
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\obj\Debug\CompareBackups.csproj.GenerateResource.cache
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\obj\Debug\CompareBackups.csproj.CoreCompileInputs.cache
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\obj\Debug\CompareBackups.exe
+C:\Users\Windows\source\repos\CompareBackups\CompareBackups\obj\Debug\CompareBackups.pdb
